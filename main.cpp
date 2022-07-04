@@ -78,7 +78,7 @@ int main(int argc, char ** argv) {
         {
             cout << "invalid offset detected" << endl;
         }
-        else if (offsetx != 0 && offsety == 0)
+        else if (offsetx != 0 && offsety != 0)
         {
             cout << "offset X " << offsetx << " Y " << offsety << endl;
         }
