@@ -240,6 +240,9 @@ int main(int argc, char ** argv) {
         else 
         {
             waitTick = true;
+            #ifndef DEBUG 
+            this_thread::sleep_for(std::chrono::milliseconds(50));
+            #endif
         }
         // sleep, so cpu usage isn't 99999%
         #ifndef DEBUG 
